@@ -33,7 +33,7 @@
 
 
 为什么用hexoHexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github和Heroku上，引用Hexo作者 @tommy351 的话：快速、简单且功能强大的 Node.js 博客框架。A fast, simple &amp;amp; powerful blog framework, powe">
-<meta property="og:updated_time" content="2017-02-20T12:09:57.000Z">
+<meta property="og:updated_time" content="2017-02-21T01:44:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo+github打造个人博客">
 <meta name="twitter:description" content="导语
@@ -200,7 +200,7 @@
 
 
   <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
+    <strong class="toc-title">Posts List</strong>
     <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#导语"><span class="toc-text">导语</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么用hexo"><span class="toc-text">为什么用hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么使用GitHub-Pages"><span class="toc-text">为什么使用GitHub Pages</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo安装"><span class="toc-text">hexo安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册github"><span class="toc-text">注册github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo主题"><span class="toc-text">hexo主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo命令"><span class="toc-text">hexo命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github-pages绑定域名"><span class="toc-text">github pages绑定域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#经验"><span class="toc-text">经验</span></a>
   </div>
 
@@ -243,6 +243,9 @@
       
 
       
+        <i class="icon-comment"></i> 
+        <span class="ds-thread-count" data-thread-key="post-hexo"><i class="fa fa-spinner fa-spin"></i></span> 条评论
+      
       
     </div>
   </header>
@@ -260,16 +263,37 @@
 <h2 id="为什么使用GitHub-Pages"><a href="#为什么使用GitHub-Pages" class="headerlink" title="为什么使用GitHub Pages"></a>为什么使用GitHub Pages</h2><p>GitHub Pages 可以被认为是用户编写的、托管在github上的静态网页。由于它的空间免费稳定， 可以用于介绍托管在github上的Project或者搭建网站。有两种形式: Project Site 和 User/Org Site，二者之间的差异可以戳 <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a> 。基于 GP 创建Site是很方便的，这有一个简单的教程： <a href="http://www.ido321.com/78.html" target="_blank" rel="external">学习 Github Page 教你分分钟搭建自己的博客</a></p>
 <h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h2><p>Mac环境下Hexo的安装，基于brew</p>
 <p>一.Git安装</p>
-<p>brew install git #Mac电脑使用brew安装<br>Node.js安装（本人完全不懂Node.js =。= ）<br>brew install node<br>使用以下命令验证是否安装成功<br>node -v<br>npm -v</p>
+<p>#Mac电脑使用brew安装</p>
+<p> <code>brew install git</code></p>
+<p>Node.js安装（本人完全不懂Node.js =。= ）</p>
+<p><code>brew install node</code></p>
+<p>使用以下命令验证是否安装成功</p>
+<p><code>node -v</code></p>
+<p><code>npm -v</code></p>
 <p>二.Hexo安装</p>
-<p>npm install hexo -g #-g表示全局安装, npm默认为当前项目安装</p>
+<p><code>npm install hexo -g</code></p>
+<ul>
+<li>-g表示全局安装, npm默认为当前项目安装</li>
+</ul>
 <p>Hexo设置(先进入你要操作的目录，会在当前目录下新建)</p>
-<p>hexo init XXXX #新建博客目录</p>
-<p>hexo g #根据当前目录下文件生成静态网页</p>
-<p>npm install #初始化依赖</p>
-<p>hexo s #启动服务器</p>
+<p><code>hexo init XXXX</code></p>
+<ul>
+<li>新建博客目录</li>
+</ul>
+<p><code>hexo g</code></p>
+<ul>
+<li>根据当前目录下文件生成静态网页</li>
+</ul>
+<p><code>npm install</code></p>
+<ul>
+<li>初始化依赖</li>
+</ul>
+<p><code>hexo s</code></p>
+<ul>
+<li>启动服务器</li>
+</ul>
 <p>三、安装 Hexo</p>
-<p>npm install -g hexo</p>
+<p><code>npm install -g hexo</code></p>
 <h2 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h2><p>请自行百度</p>
 <h2 id="hexo主题"><a href="#hexo主题" class="headerlink" title="hexo主题"></a>hexo主题</h2><p>请自行百度</p>
 <p><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">知乎关于hexo的主题</a></p>
@@ -327,7 +351,7 @@
   <span id="cover" class="cover hide"></span>
   <div id="modal-dialog" class="modal-dialog hide-dialog">
     <div class="modal-header">
-      <span id="close" class="btn-close">关闭</span>
+      <span id="close" class="btn-close">Close</span>
     </div>
     <hr>
     <div class="modal-body">
@@ -423,8 +447,27 @@
     
 
     
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-hexo" 
+      data-title="使用hexo+github打造个人博客" data-url="http://horyan.cn/2017/02/20/hexo/index.html"></div>
+    <!-- 多说评论框 end -->
+  </section>
 
 
+
+
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"horyan"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
 
 
     
